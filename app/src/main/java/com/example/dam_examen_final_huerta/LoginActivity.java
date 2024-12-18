@@ -1,5 +1,6 @@
 package com.example.dam_examen_final_huerta;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.ArrayAdapter;
@@ -54,10 +55,11 @@ public class LoginActivity extends AppCompatActivity {
                     Toast.makeText(LoginActivity.this, "Por favor, completa todos los campos.", Toast.LENGTH_SHORT).show();
                 } else {
                     // Simular inicio de sesión exitoso
-                    String message = "Número de Tarjeta: " + cardNumber + "\n" +
-                            "Tipo de Documento: " + documentType + "\n" +
-                            "Clave: " + password;
-                    Toast.makeText(LoginActivity.this, message, Toast.LENGTH_LONG).show();
+                    Toast.makeText(LoginActivity.this, "Inicio de sesión exitoso.", Toast.LENGTH_SHORT).show();
+
+                    // Redirigir a NotasActivity
+                    Intent intent = new Intent(LoginActivity.this, NotasActivity.class);
+                    startActivity(intent);
                 }
             }
         });
