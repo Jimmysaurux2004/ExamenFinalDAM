@@ -1,0 +1,11 @@
+<resources>
+    <!-- Nombre de la app -->
+    <string name="app_name">DAM_Examen_Final_Huerta</string>
+
+    <!-- Opciones del Spinner para Tipo de Documento -->
+    <string-array name="document_types">
+        <item>DNI</item>
+        <item>Carnet de extranjería</item>
+        <item>Pasaporte</item>
+    </string-array>
+</resources>
